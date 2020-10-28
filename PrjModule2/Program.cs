@@ -12,6 +12,12 @@ namespace PrjModule2
         {
             MathSolver solver = new MathSolver();
 
+            //Dot in console
+            System.Globalization.CultureInfo customCulture = (System.Globalization.CultureInfo)System.Threading.Thread.CurrentThread.CurrentCulture.Clone();
+            customCulture.NumberFormat.NumberDecimalSeparator = ".";
+            System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
+            //
+
             Menu(solver);
         }
         static void Menu(IMathSolver solver)

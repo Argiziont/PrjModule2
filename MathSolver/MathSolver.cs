@@ -237,7 +237,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public long Differentiate(int[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -266,7 +266,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public long Differentiate(long[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -295,7 +295,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public double Differentiate(double[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -324,7 +324,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public double Differentiate(float[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -353,7 +353,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public long Divide(int[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -382,7 +382,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public long Divide(long[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -411,7 +411,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public double Divide(double[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -440,7 +440,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public double Divide(float[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -469,7 +469,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public long Multiply(int[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -498,7 +498,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public long Multiply(long[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -527,7 +527,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public double Multiply(double[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -556,7 +556,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public double Multiply(float[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -585,7 +585,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public long Summarize(int[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -616,7 +616,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public long Summarize(long[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -646,7 +646,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public double Summarize(double[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -676,7 +676,7 @@ namespace MathSolverLibrary
         /// <returns>Sum of all values</returns>
         public double Summarize(float[] array, int degree)
         {
-            if (degree == 0)
+            if (degree <= 0)
                 throw new MathSolverExeption("Couldn't power number in 0 degree");
             if (array == null)
                 throw new MathSolverExeption("Array of values cannot be empty");
@@ -705,19 +705,24 @@ namespace MathSolverLibrary
         /// <returns>Array of double numbers</returns>
         public static double[] StringLineToDouble(string stringLine)
         {
+            if (stringLine == null)
+                throw new MathSolverExeption("Array couldn't be empty");
+
             string[] stringArray = stringLine.Split(" ");
             List<double> doubleList = new List<double>();
 
             foreach (string item in stringArray)
             {
+                double convertedNumber = 0;
                 try
                 {
-                    doubleList.Add(Convert.ToDouble(item));
+                    convertedNumber = Convert.ToDouble(item);
                 }
-                catch (MathSolverExeption)
+                catch
                 {
                     throw new MathSolverExeption("Incorrect string input");
                 }
+                doubleList.Add(convertedNumber);
             }
             return doubleList.ToArray();
         }
@@ -728,19 +733,24 @@ namespace MathSolverLibrary
         /// <returns>Array of float numbers</returns>
         public static float[] StringLineToFloat(string stringLine)
         {
+            if (stringLine == null)
+                throw new MathSolverExeption("Array couldn't be empty");
+
             string[] stringArray = stringLine.Split(" ");
             List<float> floatList = new List<float>();
 
             foreach (string item in stringArray)
             {
+                float convertedNumber = 0;
                 try
                 {
-                    floatList.Add((float)Convert.ToDouble(item));
+                    convertedNumber = (float)Convert.ToDouble(item);
                 }
-                catch (MathSolverExeption)
+                catch
                 {
                     throw new MathSolverExeption("Incorrect string input");
                 }
+                floatList.Add(convertedNumber);
             }
             return floatList.ToArray();
         }
@@ -751,19 +761,24 @@ namespace MathSolverLibrary
         /// <returns>Array of int numbers</returns>
         public static int[] StringLineToInt(string stringLine)
         {
+            if (stringLine == null)
+                throw new MathSolverExeption("Array couldn't be empty");
+
             string[] stringArray = stringLine.Split(" ");
             List<int> intList = new List<int>();
 
             foreach (string item in stringArray)
             {
+                int convertedNumber = 0;
                 try
                 {
-                    intList.Add(Convert.ToInt32(item));
+                    convertedNumber = Convert.ToInt32(item);
                 }
-                catch (MathSolverExeption)
+                catch
                 {
                     throw new MathSolverExeption("Incorrect string input");
                 }
+                intList.Add(convertedNumber);
             }
             return intList.ToArray();
         }
@@ -774,19 +789,24 @@ namespace MathSolverLibrary
         /// <returns>Array of long numbers</returns>
         public static long[] StringLineToLong(string stringLine)
         {
+            if (stringLine == null)
+                throw new MathSolverExeption("Array couldn't be empty");
+
             string[] stringArray = stringLine.Split(" ");
             List<long> longList = new List<long>();
 
             foreach (string item in stringArray)
             {
+                long convertedNumber = 0;
                 try
                 {
-                    longList.Add(Convert.ToInt64(item));
+                    convertedNumber = Convert.ToInt64(item);
                 }
-                catch (MathSolverExeption)
+                catch
                 {
                     throw new MathSolverExeption("Incorrect string input");
                 }
+                longList.Add(convertedNumber);
             }
             return longList.ToArray();
         }
