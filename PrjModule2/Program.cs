@@ -18,7 +18,26 @@ namespace PrjModule2
             System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
             //
 
-            Menu(solver);
+            while (true)
+            {
+
+                Menu(solver);
+
+                Console.WriteLine("Press 'e' for exit or enter for continue");
+
+                ConsoleKeyInfo exitState = Console.ReadKey();
+                switch (exitState.Key)
+                {
+                    case ConsoleKey.Enter:
+                        Console.Clear();
+                        continue;
+                    case ConsoleKey.E:
+                        return; ;
+                    default:
+                        return;
+
+                }
+            }
         }
         static void Menu(IMathSolver solver)
         {
